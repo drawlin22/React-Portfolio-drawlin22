@@ -8,8 +8,10 @@ import './index.css';
 import App from '../App';
 import ErrorPage from './pages/ErrorPage';
 import HomePage from './pages/HomePage';
+import WorkPage from './pages/WorkPage';
+import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
-import Contact from './pages/ContactPage';
+import ResumePage from './pages/resume';
 
 const router = createBrowserRouter([
     {path: '/', 
@@ -26,8 +28,16 @@ const router = createBrowserRouter([
     },
         {
             path: '/contact',
-        element: <Contact/>,
+        element: <ContactPage/>,
     },
+    {
+        path: '/portfolio',
+    element: <WorkPage/>,
+},
+{
+    path: '/resume',
+element: <ResumePage/>,
+},
     ],
 },
 ]);

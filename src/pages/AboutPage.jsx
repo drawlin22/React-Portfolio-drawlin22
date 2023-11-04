@@ -1,33 +1,31 @@
-import React from "react";
+import React from 'react';
+// import { useState, useEffect } from 'react';
 
-// This is a static page mocking an "About Us" section for our fake user data
-import { workData } from "./workData";
+import { Link } from 'react-router-dom';
 
 export default function AboutPage() {
+ 
+
   return (
     <div className="container pt-4">
-         {workData.map((article) => (
-     <article id={article.id} key={article.id}>
-      <p>
-        Project Title: {article.title}
-       </p>
-       <p>
-          Project Description: {article.description}
-       </p>
-       <a href={article.link}>
-         <img
-           src={article.imageSrc}
-           title={article.title}
-           alt={article.title}
-           height="500px"
-           width="400px"
-           className="a"
-         />
-       </a>
-      
-       <section className="card-content"></section>
-     </article>
-   ))}
-    </div>
-  );
-}
+    
+    <p>
+            My name is Donnie Rawlings, and I decided to change my career after twenty-two years of working in retail and restaurant upper management. 
+        I enjoy problem solving and finding unique ways to overcome daily hurdles as they arise needing quick solutions. 
+    </p>
+    
+    <p>    
+        In the last five years I have been involved in the roll out of multiple new divisions of my company. Most recently as part of enhancing the performace of my division I have been involved
+        with teams to develop applications and websites to improve efficiency. I have really thrived in that space. This made me excited to make a leap into a new field. I am certain that joining your
+        team would be mutually benificial. 
+    </p>
+    
+    <p>
+        I bring with me not only decades of problem solving, but also the experience of managing teams through constantly chaning work environments. I have my MBA in business managment,
+        and am currently working through a full stack bootcamp at UC Davis.
+    
+    </p>
+        </div>
+      );
+    }
+    
