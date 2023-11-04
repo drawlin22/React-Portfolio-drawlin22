@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 // Bringing in the required component from 'react-router-dom' for linking between pages and getting the current param variable's value from URL
 import { useParams, Link } from 'react-router-dom';
@@ -7,20 +8,7 @@ import { useParams, Link } from 'react-router-dom';
 // import API from '../utils/API';
 
 export default function ProfilePage() {
-  const [user, setUser] = useState({});
-
-  // Todo: Use the useParams hook to find out which user profile has been requested by the user
-const { id } = useParams();
-  const fetchData = async () => {
-    const { data } = await API.getSingleUser(id);
-
-    setUser(data);
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
+ 
   return (
     <>
       <Container>

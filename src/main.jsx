@@ -1,5 +1,6 @@
-import ReactDom from 'react-dom/client';
-import {createBrowserRouter, Routerprovider} from 'react-router-dom/server';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
@@ -15,18 +16,23 @@ const router = createBrowserRouter([
     element: <App/>,
     errorElement: <ErrorPage/>,
     children: [
-        {index: true, 
-        element: <HomePage/>},
-        {path: '/profile/:username',
-        element: <ProfilePage/>},
-        {path: '/about',
-        element: <AboutPage/>},
-        {path: '/contact',
-        element: <Contact/>},
-    ]},
+        {
+            index: true, 
+        element: <HomePage/>,
+    },
+        {
+            path: '/about',
+        element: <AboutPage/>,
+    },
+        {
+            path: '/contact',
+        element: <Contact/>,
+    },
+    ],
+},
 ]);
 
 // Render the RouterProvider component
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <Routerprovider router={router} />
+    <RouterProvider router={router} />
   );

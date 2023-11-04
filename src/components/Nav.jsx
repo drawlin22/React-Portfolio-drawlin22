@@ -1,3 +1,4 @@
+import React from 'react';
 // Bringing in the required import from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import Navbar from './UI/Navbar';
@@ -11,7 +12,7 @@ export default function Nav() {
           Home
         </Link>,
         <Link key={2} className="nav-link text-light" to="/about">
-          About Us
+          About My Work
         </Link>,
          <Link key={3} className="nav-link text-light" to="/contact">
          Contact

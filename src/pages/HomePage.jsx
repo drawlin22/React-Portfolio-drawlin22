@@ -1,5 +1,6 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
-// Todo: Bring in the required component from 'react-router-dom' for linking between pages
+
 import { Link } from 'react-router-dom';
 // import Profile from '../components/UI/ProfileSections/ProfileTeaser';
 // import ListItem from '../components/UI/ListItem';
@@ -7,37 +8,27 @@ import { Link } from 'react-router-dom';
 // import API from '../utils/API';
 
 export default function HomePage() {
-  // Prior to the return statement, our homepage uses a few react hooks and fetchData function to query to a mock database and retrieve random user data
-  const [users, setUsers] = useState([]);
+ 
 
-  const fetchData = async () => {
-    const { data } = await API.getUsers();
-
-    setUsers(data);
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  // Iterate over each mock user to display their abridged profile data and a link to their page
   return (
     <div className="container pt-4">
-      <ul className="list-group list-group">
-        {users.map((user) => (
-          <ListItem key={user.id}>
-            <Profile user={user} />
-            {/* Todo: Update this link component's to prop so that the user can click to see a single user's profile */}
+    
+<p>
+        My name is Donnie Rawlings, and I decided to change my career after twenty-two years of working in retail and restaurant upper management. 
+    I enjoy problem solving and finding unique ways to overcome daily hurdles as they arise needing quick solutions. 
+</p>
 
-            <Link
-              to={`/profile/${user.id}`}
-              className="badge bg-primary rounded-pill"
-            >
-              See More
-            </Link>
-          </ListItem>
-        ))}
-      </ul>
+<p>    
+    In the last five years I have been involved in the roll out of multiple new divisions of my company. Most recently as part of enhancing the performace of my division I have been involved
+    with teams to develop applications and websites to improve efficiency. I have really thrived in that space. This made me excited to make a leap into a new field. I am certain that joining your
+    team would be mutually benificial. 
+</p>
+
+<p>
+    I bring with me not only decades of problem solving, but also the experience of managing teams through constantly chaning work environments. I have my MBA in business managment,
+    and am currently working through a full stack bootcamp at UC Davis.
+
+</p>
     </div>
   );
 }
