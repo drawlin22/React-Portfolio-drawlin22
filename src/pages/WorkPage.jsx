@@ -9,11 +9,13 @@ export default function WorkPage() {
          {workData.map((article) => (
      <article id={article.id} key={article.id}>
       <p>
-        Project Title: {article.title}
+       <strong>Project Title: </strong> {article.title}
        </p>
        <p>
-          Project Description: {article.description}
+          <strong>Project Description:</strong> {article.description}
        </p>
+       <br/>
+      <br/>
        <a href={article.link}>
          <img
            src={article.imageSrc}
@@ -23,8 +25,10 @@ export default function WorkPage() {
            width="400px"
            className="a"
          />
+        
        </a>
-      
+      <br/>
+      <br/>
        <section className="card-content"></section>
      </article>
    ))}
