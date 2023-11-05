@@ -8,10 +8,15 @@ export default function HomePage() {
 
   return (
     <div className="container pt-4">
+      <img 
+      src="src/assets/img/Profile.jpeg" alt="logo"
+      height="500px"
+      width="400px"
+      className="a"
+       />
     
 <p>
-WHEN I load the portfolio
-THEN I am presented with a page containing a header, a section for content, and a footer
+
 </p>
 
     </div>
