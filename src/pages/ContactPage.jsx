@@ -44,7 +44,9 @@ export default function ContactPage() {
  };
 
  return (
+  
    <>
+    <br></br>
      <form onSubmit={handleSubmit}>
        <label>
          Name:
@@ -57,8 +59,10 @@ export default function ContactPage() {
          />
          {nameError && <p>{nameError}</p>}
        </label>
+       <br></br>
+       <br></br>
        <label>
-         Email:
+        Email:  
          <input
            type="text"
            name="email"
@@ -68,6 +72,8 @@ export default function ContactPage() {
          />
          {emailError && <p>{emailError}</p>}
        </label>
+       <br></br>
+       <br></br>
        <label>
          Message:
          <textarea
@@ -78,8 +84,12 @@ export default function ContactPage() {
          />
          {messageError && <p>{messageError}</p>}
        </label>
+       <br></br>
+       <br></br>
        <input type="submit" value="Submit" />
      </form>
+     <br></br>
    </>
+   
  );
 }

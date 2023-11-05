@@ -5,7 +5,7 @@ import {Footer} from './src/components/Footer';
 
 function App() {
   return (
-    <div className="container">
+    <div className="container bg-info">
       <Nav />
       <Outlet />
       <Footer />
