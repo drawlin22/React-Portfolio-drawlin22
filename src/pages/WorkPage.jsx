@@ -5,7 +5,7 @@ import { workData } from "./workData";
 
 export default function WorkPage() {
   return (
-    <div className="container pt-4">
+    <div className="container pt-4 bg-info">
          {workData.map((article) => (
      <article id={article.id} key={article.id}>
       <p>
