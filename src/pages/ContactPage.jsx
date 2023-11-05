@@ -1,37 +1,85 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-// Bringing in the required component from 'react-router-dom' for linking between pages and getting the current param variable's value from URL
-import { useParams, Link } from 'react-router-dom';
-// import Profile from '../components/UI/ProfileSections/ProfileDetailed';
-// import Container from '../components/UI/ListItem';
-
-// import API from '../utils/API';
+import React, { useState } from 'react';
 
 export default function ContactPage() {
- 
-  return (
-    <>
-    <p>WHEN I am presented with the Contact section
-THEN I see a contact form with fields for a name, an email address, and a message
-WHEN I move my cursor out of one of the form fields without entering text
-THEN I receive a notification that this field is required
-WHEN I enter text into the email address field
-THEN I receive a notification if I have entered an invalid email address</p>
-               
-               {/* <form action="mailto:tacobellboi@yahoo.com" method="post" class="form">
+ const [name, setName] = useState("");
+ const [email, setEmail] = useState("");
+ const [message, setMessage] = useState("");
+ const [nameError, setNameError] = useState("");
+ const [emailError, setEmailError] = useState("");
+ const [messageError, setMessageError] = useState("");
 
-                   <label for="fname">First Name</label>
-                   <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
-               
-                   <label for="lname">Last Name</label>
-                   <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
-                   <label for="subject"></label>
-                   <textarea id="subject" name="subject" placeholder="How Can I help?" style="height:200px"></textarea>
-               
-                   <input type="submit" value="Submit"/>
-               
-                 </form> */}
+ const isValidEmail = (email) => {
+   const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+   return regex.test(email);
+ };
 
-    </>
-  );
+ const handleBlur = (event) => {
+   switch (event.target.name) {
+     case "name":
+       setNameError(name ? "" : "Name is required");
+       break;
+     case "email":
+       setEmailError(isValidEmail(email) ? "" : "Invalid email address");
+       break;
+     case "message":
+       setMessageError(message ? "" : "Message is required");
+       break;
+     default:
+       break;
+   }
+ };
+
+ const handleSubmit = (event) => {
+   event.preventDefault();
+
+   setNameError(name ? "" : "Name is required");
+   setEmailError(isValidEmail(email) ? "" : "Invalid email address");
+   setMessageError(message ? "" : "Message is required");
+
+   if (!name || !email || !message || !isValidEmail(email)) {
+     return;
+   }
+
+   // Handle form submission here
+ };
+
+ return (
+   <>
+     <form onSubmit={handleSubmit}>
+       <label>
+         Name:
+         <input
+           type="text"
+           name="name"
+           value={name}
+           onChange={(e) => setName(e.target.value)}
+           onBlur={handleBlur}
+         />
+         {nameError && <p>{nameError}</p>}
+       </label>
+       <label>
+         Email:
+         <input
+           type="text"
+           name="email"
+           value={email}
+           onChange={(e) => setEmail(e.target.value)}
+           onBlur={handleBlur}
+         />
+         {emailError && <p>{emailError}</p>}
+       </label>
+       <label>
+         Message:
+         <textarea
+           name="message"
+           value={message}
+           onChange={(e) => setMessage(e.target.value)}
+           onBlur={handleBlur}
+         />
+         {messageError && <p>{messageError}</p>}
+       </label>
+       <input type="submit" value="Submit" />
+     </form>
+   </>
+ );
 }
