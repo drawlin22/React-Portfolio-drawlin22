@@ -2,6 +2,7 @@
 import React from 'react';
 import {resumeData} from './resumeData';
 
+
 function ContactInfo() {
  return (
    <div>
