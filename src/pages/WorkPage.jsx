@@ -1,6 +1,5 @@
 import React from "react";
 
-// This is a static page mocking an "About Us" section for our fake user data
 import { workData } from "./workData";
 
 export default function WorkPage() {
@@ -14,8 +13,7 @@ export default function WorkPage() {
        <p>
           <strong>Project Description:</strong> {article.description}
        </p>
-       <br/>
-      <br/>
+
       <p>
         <strong>Github Repo:</strong>
         <a href= {article.repo} target="_blank" rel="noopener noreferrer">{article.repo}
@@ -27,7 +25,7 @@ export default function WorkPage() {
            title={article.title}
            alt={article.title}
            height="500px"
-           width="400px"
+           width="1200px"
            className="a"
          />
         
