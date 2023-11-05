@@ -16,6 +16,11 @@ export default function WorkPage() {
        </p>
        <br/>
       <br/>
+      <p>
+        <strong>Github Repo:</strong>
+        <a href= {article.repo} target="_blank" rel="noopener noreferrer">{article.repo}
+        </a>
+        </p>
        <a href={article.link}>
          <img
            src={article.imageSrc}

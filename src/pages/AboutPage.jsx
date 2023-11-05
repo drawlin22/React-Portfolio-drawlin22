@@ -8,7 +8,12 @@ export default function AboutPage() {
 
   return (
     <div className="container pt-4">
-    
+     <img 
+      src="src/assets/img/Profile.jpeg" alt="logo"
+      height="500px"
+      width="400px"
+      className="a"
+       />
     <p>
             My name is Donnie Rawlings, and I decided to change my career after twenty-two years of working in retail and restaurant upper management. 
         I enjoy problem solving and finding unique ways to overcome daily hurdles as they arise needing quick solutions. 
