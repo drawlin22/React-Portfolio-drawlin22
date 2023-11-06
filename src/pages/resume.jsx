@@ -64,6 +64,15 @@ function Skills() {
     </div>
   );
  }
+
+ function Proficiencies() {
+  return (
+    <div>
+      <h2>Proficiencies</h2>
+      <p>{resumeData.proficiencies}</p>
+    </div>
+  );
+ }
  
 
 export default function ResumePage() {
@@ -71,7 +80,7 @@ export default function ResumePage() {
   <>
   <br></br>
     <a href="src/assets/resume/Resume.pdf" download="Resume">
-     <button>Download Resume</button>
+     <button>Download My Resume</button>
    </a>
    <br></br>
    <br></br>
@@ -80,6 +89,7 @@ export default function ResumePage() {
    <Summary />,
    <Education />,
     <WorkExperience />
+    <Proficiencies />
    </>
  )
 }

@@ -37,5 +37,8 @@ export const resumeData = {
       },
       
     ],
+
+    proficiencies: "HTML, CSS, JAVASCRIPT, RESTFUL API, EXPRESS, MYSQL, SEQUALIZE, MONGODB, MONGOOSE, NODE, REACT, GIT, GITHUB, HEROKU, JQUERY, BOOTSTRAP, HANDLEBARS, PWA, GRAPHQL, APOLLO, MERN"
+
    };
    
