@@ -49,10 +49,10 @@ export default function ContactPage() {
     <br></br>
      <form onSubmit={handleSubmit}>
        <label>
-         Name:
          <input
            type="text"
            name="name"
+           placeholder="Enter your name"
            value={name}
            onChange={(e) => setName(e.target.value)}
            onBlur={handleBlur}
@@ -62,10 +62,10 @@ export default function ContactPage() {
        <br></br>
        <br></br>
        <label>
-        Email:  
          <input
            type="text"
            name="email"
+           placeholder="Enter your email"
            value={email}
            onChange={(e) => setEmail(e.target.value)}
            onBlur={handleBlur}
@@ -75,9 +75,9 @@ export default function ContactPage() {
        <br></br>
        <br></br>
        <label>
-         Message:
          <textarea
            name="message"
+            placeholder="Enter your message"
            value={message}
            onChange={(e) => setMessage(e.target.value)}
            onBlur={handleBlur}

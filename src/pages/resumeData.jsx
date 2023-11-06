@@ -5,7 +5,7 @@ export const resumeData = {
       email: "Donnie.Rawlings@Wal-Mart.com",
       name: "Donnie Rawlings",
     },
-    skills: "I am a self-motivated person who strives for perfection in all tasks that I perform. I enjoy learning new skill/strategies and am always up for new challenges. I have strong skills in written and oral communication. I thrive in positions with little to no daily supervision. I have a long history of building teams and brands. I have a strong history of implementing new programs/ processing as well as creative problem solving during new program roll outs.",
+    skills: "Highly experienced manager with over 20 years of experience in leading teams and driving operational efficiency. Proven ability to manage complex projects and deliver results. Currently transitioning into web development, bringing strong problem-solving skills, attention to detail, and a strong understanding of key web development languages (HTML, CSS,  and JavaScript). Completed extensive training in full-stack web development and have built several web applications, demonstrating a solid understanding of web development best practices. Eager to bring leadership experience and technical skills to a web development role.",
     summary: "Over 20 years of experience in upper management positions. An employment history that prove I constantly strive for higher levels of responsibility. Proficient with all Microsoft Office products, as well as the internet.",
     education: [
       {

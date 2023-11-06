@@ -10,18 +10,15 @@ export default function Nav() {
     <Navbar
     links={[
       <NavLink key={1} className="nav-link text-light" to="/" activeClassName="active">
-        Home
-      </NavLink>,
-      <NavLink key={2} className="nav-link text-light" to="/about" activeClassName="active">
         About Me
       </NavLink>,
-      <NavLink key={3} className="nav-link text-light" to="/portfolio" activeClassName="active">
+      <NavLink key={2} className="nav-link text-light" to="/portfolio" activeClassName="active">
         Portfolio
       </NavLink>,
-      <NavLink key={4} className="nav-link text-light" to="/contact" activeClassName="active">
+      <NavLink key={3} className="nav-link text-light" to="/contact" activeClassName="active">
         Contact
       </NavLink>,
-      <NavLink key={5} className="nav-link text-light" to="/resume" activeClassName="active">
+      <NavLink key={4} className="nav-link text-light" to="/resume" activeClassName="active">
         Resume
       </NavLink>,
      ]}
