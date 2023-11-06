@@ -5,36 +5,24 @@ import { workData } from "./workData";
 export default function WorkPage() {
   return (
     <div className="container pt-4">
-         {workData.map((article) => (
-     <article id={article.id} key={article.id}>
-      <p>
-       <strong>Project Title: </strong> {article.title}
-       </p>
-       <p>
-          <strong>Project Description:</strong> {article.description}
-       </p>
-
-      <p>
-        <strong>Github Repo:</strong>
-        <a href= {article.repo} target="_blank" rel="noopener noreferrer">{article.repo}
-        </a>
-        </p>
-       <a href={article.link}>
-         <img
-           src={article.imageSrc}
-           title={article.title}
-           alt={article.title}
-           height="500px"
-           width="1200px"
-           className="a"
-         />
-        
-       </a>
-      <br/>
-      <br/>
-       <section className="card-content"></section>
-     </article>
-   ))}
+      <div className="row">
+ {workData.map((article) => (
+   <div className="col-md-4" key={article.id}>
+<div className="card" key={article.id}>
+ <div className="card-body" style={{height: '425px'}}>
+   <h5 className="card-title">{article.title}</h5>
+   <p className="card-text">{article.description}</p>
+   <a href={article.repo} target="_blank" rel="noopener noreferrer" className="card-link">Github Repo</a>
+   <a href={article.link}>
+     <img src={article.imageSrc} title={article.title} alt={article.title} className="card-img-bottom" 
+     height="200px" width="50px"/>
+   </a>
+ </div>
+</div>
+<br></br>
+   </div>
+ ))}
+</div>
     </div>
   );
 }
