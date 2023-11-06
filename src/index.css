@@ -59,6 +59,12 @@
     inset: auto 0 0 0;
     padding: 1em;
   }
+
+  .active {
+    background-color: #3f51b5;
+    color: white;
+   }
+   
   
   @media (prefers-color-scheme: light) {
     :root {

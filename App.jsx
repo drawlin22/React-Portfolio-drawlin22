@@ -1,12 +1,12 @@
 import React from 'react';
 import {Outlet} from 'react-router-dom';
-import Nav from './src/components/Nav';
 import {Footer} from './src/components/Footer';
+import {Header} from './src/components/Header';
 
 function App() {
   return (
     <div className="container bg-info">
-      <Nav />
+      <Header />
       <Outlet />
       <Footer />
     </div>

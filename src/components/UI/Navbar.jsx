@@ -1,4 +1,6 @@
 import React from "react";
+
+
 export default function Nav({ links }) {
     return (
       <nav className="navbar navbar-expand-lg bg-primary">
