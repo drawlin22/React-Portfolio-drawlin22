@@ -38,10 +38,11 @@ function Skills() {
       <h2>Education</h2>
       {resumeData.education.map((edu, index) => (
         <div key={index}>
-          <p>{edu.institution}</p>
-          <p>{edu.degree}</p>
-          <p>{edu.gpa}</p>
-          <p>{edu.graduationDate}</p>
+          <p><strong>{edu.institution}  </strong>{ edu.location}</p>
+          <p><i>{edu.degree}</i></p>
+          <p>GPA {edu.gpa}</p>
+          <p>Graduation: {edu.graduationDate}</p>
+          <br></br>
         </div>
       ))}
     </div>
@@ -68,6 +69,12 @@ function Skills() {
 export default function ResumePage() {
  return (
   <>
+  <br></br>
+    <a href="src/assets/resume/Resume.pdf" download="Resume">
+     <button>Download Resume</button>
+   </a>
+   <br></br>
+   <br></br>
   <ContactInfo />,
    <Skills />,
    <Summary />,
