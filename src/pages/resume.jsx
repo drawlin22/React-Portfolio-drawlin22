@@ -84,12 +84,12 @@ export default function ResumePage() {
    </a>
    <br></br>
    <br></br>
-  <ContactInfo />,
+   <Proficiencies />,
+  {/* <ContactInfo />, */}
    <Skills />,
    <Summary />,
    <Education />,
     <WorkExperience />
-    <Proficiencies />
    </>
  )
 }

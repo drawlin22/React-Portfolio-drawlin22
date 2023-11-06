@@ -22,7 +22,7 @@ export const workData = [
       title: "Progressive Web App Project",
       imageSrc: "src/assets/img/jate.png",
       link: "https://progressive-drawlin22-19-21faf509f9ed.herokuapp.com/",
-      description: "A simple text editor progressive web application.",
+      description: "This is a simple text editing program that is also a progressive web application. Users can create, save, and delete notes. This application uses an Express.js back end and saves and retrieves note data from a JSON file.",
       repo: "https://github.com/drawlin22/progressive-19-drawlin22",
       
     },
