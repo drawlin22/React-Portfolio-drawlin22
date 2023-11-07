@@ -1,9 +1,11 @@
+import codemantic from "../assets/img/codemantic.png";
+
 
 export const workData = [
     {
       id: "CodeMantic",
       title: "CodeMantic",
-      imageSrc: "src/assets/img/codemantic.png",
+      imageSrc: {codemantic},
       link: "https://codemantic-e7e316dea174.herokuapp.com/",
       description: "A dating app for web developers brought together by their love of coding. Coders can create a profile, search for other coders, and if a user is able to debug a block of code they gain access to search through and filter other users profiles.",
       repo: "https://github.com/drawlin22/codeMantic",
