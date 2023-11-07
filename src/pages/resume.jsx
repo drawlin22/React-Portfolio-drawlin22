@@ -1,6 +1,7 @@
 
 import React from 'react';
 import {resumeData} from './resumeData';
+import myResume from '../assets/resume/Resume.pdf';
 
 
 function ContactInfo() {
@@ -79,7 +80,7 @@ export default function ResumePage() {
  return (
   <>
   <br></br>
-    <a href="src/assets/resume/Resume.pdf" download="Resume">
+    <a href={myResume} download="Resume">
      <button>Download My Resume</button>
    </a>
    <br></br>
