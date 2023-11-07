@@ -6,7 +6,7 @@ export const workData = [
     {
       id: "CodeMantic",
       title: "CodeMantic",
-      imageSrc: {codemantic},
+      imageSrc: codemantic,
       link: "https://codemantic-e7e316dea174.herokuapp.com/",
       description: "A dating app for web developers brought together by their love of coding. Coders can create a profile, search for other coders, and if a user is able to debug a block of code they gain access to search through and filter other users profiles.",
       repo: "https://github.com/drawlin22/codeMantic",
@@ -14,7 +14,7 @@ export const workData = [
     {
       id: "placeholder",
       title: "Socialite",
-      imageSrc: {socialite},
+      imageSrc: socialite,
       link: "https://drawlin22.github.io/007-socialite/",
       description: "A place for people to plan the perfect date in their area. With this application a user can search for restaurants by cuisine, movies, sports, theather, festivals and other events in their area. Users can also access local breweries near their area ", 
       repo: "https://github.com/drawlin22/007-socialite",
