@@ -1,4 +1,5 @@
 import React from 'react';
+import gitHub from '../assets/img/Github.png';
 
 export function Footer() {
  return (
@@ -7,7 +8,7 @@ export function Footer() {
              <div className="row">
                <div className="col">
                   <ul className ="list-unstyled">
-                      <li className="footer"><a href="https://github.com/drawlin22" target="_blank" rel="noopener noreferrer"><img src ="src/assets/img/Github.png" height ="50px" width="50px"/></a></li>
+                      <li className="footer"><a href={gitHub} target="_blank" rel="noopener noreferrer"><img src ="src/assets/img/Github.png" height ="50px" width="50px"/></a></li>
                   </ul>
                </div>
                <div className="col">
