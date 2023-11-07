@@ -1,7 +1,5 @@
 # React-Portfolio-drawlin22
 
-# progressive-19-drawlin22
-
 # Description
 This project was to create an updated portfolio using React. This single paged application has components for an about me, portfolio, contact me, and resume sections. This application using header, as well as footer components. The footer contants links to my github, devto, and linkedin.
 
@@ -14,7 +12,7 @@ This project was to create an updated portfolio using React. This single paged a
 
 # Installation
 
-To install clone the repository. Run Node command npm i to install dependencies. Run npm start to initiate the server. All routes can be utilized with Insomnia.
+To install clone the repository. Run Node command npm i to install dependencies. Run npm start to initiate the server. 
 
 
 # Usage
