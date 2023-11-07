@@ -1,4 +1,5 @@
 import codemantic from "../assets/img/codemantic.png";
+import socialite from "../assets/img/socialite.png";
 
 
 export const workData = [
@@ -13,7 +14,7 @@ export const workData = [
     {
       id: "placeholder",
       title: "Socialite",
-      imageSrc: "src/assets/img/socialite.png",
+      imageSrc: {socialite},
       link: "https://drawlin22.github.io/007-socialite/",
       description: "A place for people to plan the perfect date in their area. With this application a user can search for restaurants by cuisine, movies, sports, theather, festivals and other events in their area. Users can also access local breweries near their area ", 
       repo: "https://github.com/drawlin22/007-socialite",
