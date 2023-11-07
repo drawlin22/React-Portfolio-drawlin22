@@ -20,7 +20,7 @@ To install clone the repository. Run Node command npm i to install dependencies.
 # Usage
 ![Portfolio Page](<Screenshot 2023-11-06 at 8.06.31 PM.png>)
 
-Link to deployed application: 
+Link to deployed application: https://glittering-praline-dc8226.netlify.app
 
 
 # License
