@@ -17,6 +17,7 @@ export default function AboutPage() {
           width="400px"
           className="img-fluid"
              />
+             <br></br>
           </div>
           <div className="col-md-6">
 
