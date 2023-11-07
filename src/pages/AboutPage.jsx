@@ -11,7 +11,7 @@ export default function AboutPage() {
     <div className="row">
       <div className="col-md-6">
         <img 
-          src="src/assets/img/Profile.jpeg" alt="Donnie Rawlings"
+          src="dist/assets/img/Profile.jpeg" alt="Donnie Rawlings"
           height="100px"
           width="400px"
           className="img-fluid"
