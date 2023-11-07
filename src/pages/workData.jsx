@@ -1,5 +1,13 @@
 import codemantic from "../assets/img/codemantic.png";
 import socialite from "../assets/img/socialite.png";
+import Jate from "../assets/img/Jate.png";
+import cmsblog from "../assets/img/cmsblog.png";
+import employee from "../assets/img/employee.png";
+import readme from "../assets/img/readme.png";
+import weather from "../assets/img/weather.png";
+import workday from "../assets/img/workday.png";
+import quiz from "../assets/img/quiz.png";
+import password from "../assets/img/password.png";
 
 
 export const workData = [
@@ -23,7 +31,7 @@ export const workData = [
     {
       id: "Progressive Web App",
       title: "Progressive Web App Project",
-      imageSrc: "src/assets/img/jate.png",
+      imageSrc: Jate,
       link: "https://progressive-drawlin22-19-21faf509f9ed.herokuapp.com/",
       description: "This is a simple text editing program that is also a progressive web application. Users can create, save, and delete notes. This application uses an Express.js back end and saves and retrieves note data from a JSON file.",
       repo: "https://github.com/drawlin22/progressive-19-drawlin22",
@@ -32,7 +40,7 @@ export const workData = [
     {
       id: "CMS Blog",
       title: "CMS Blog",
-      imageSrc: "src/assets/img/cmsblog.png",
+      imageSrc: cmsblog,
       link: "https://cmsblog-wk14-drawlin-79c3f4e8219c.herokuapp.com/",
       description: "A simple CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts as well.",
       repo: "https://github.com/drawlin22/cmsblog-wk14-drawlin",
@@ -40,7 +48,7 @@ export const workData = [
     {
       id: "Employee Tracker",
       title: "Employee Tracker",
-      imageSrc: "src/assets/img/employee.png",
+      imageSrc: employee,
       link: "https://github.com/drawlin22/database-wk12-drawlin",
       description: "A command-line application that allows the user to view and manage the departments, roles, and employees in a company.",
       repo: "https://github.com/drawlin22/database-wk12-drawlin",
@@ -48,7 +56,7 @@ export const workData = [
     {
       id: "Readme Generator",
       title: "Readme Generator",
-      imageSrc: "src/assets/img/readme.png",
+      imageSrc: readme,
       link: "https://github.com/drawlin22/readme-generator-2023",
       description: "A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.",
       repo: "https://github.com/drawlin22/readme-generator-2023",
@@ -56,7 +64,7 @@ export const workData = [
     {
       id: "Weather Dashboard",
       title: "Weather Dashboard",
-      imageSrc: "src/assets/img/weather.png",
+      imageSrc: weather,
       link: "https://drawlin22.github.io/drawlin22-dashboard-06/",
       description: "A weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.",
       repo: "https://github.com/drawlin22/drawlin22-dashboard-06",
@@ -64,7 +72,7 @@ export const workData = [
     {
       id: "Work Day Scheduler",
       title: "Work Day Scheduler",
-      imageSrc: "src/assets/img/workday.png",
+      imageSrc: workday,
       link: "https://drawlin22.github.io/api-scheduler-05/",
       description: "A simple calendar application that allows a user to save events for each hour of the day.",
       repo: "https://github.com/drawlin22/api-scheduler-05",
@@ -72,7 +80,7 @@ export const workData = [
     {
     id: "Javascript Quiz",
     title: "Javascript Quiz",
-    imageSrc: "src/assets/img/quiz.png",
+    imageSrc: quiz,
     link: " https://drawlin22.github.io/Quizjs4/",
     description: "A timed quiz on Javascript fundamentals that stores high scores.",
     repo: "https://github.com/drawlin22/JSdrawlin3",
@@ -80,7 +88,7 @@ export const workData = [
     {
       id: "Password Generator",
       title: "Password Generator",
-      imageSrc: "src/assets/img/password.png",
+      imageSrc: password,
       link: "https://drawlin22.github.io/JSdrawlin3/",
       description: "An application that generates a random password based on user-selected criteria.",
       repo: "https://github.com/drawlin22/JSdrawlin3",
