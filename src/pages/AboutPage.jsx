@@ -1,10 +1,9 @@
 import React from 'react';
-// import { useState, useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 import profileImage from '../assets/img/Profile.jpeg';
 
-export default function AboutPage() {
+export default function AboutPage() { 
  
 
   return (

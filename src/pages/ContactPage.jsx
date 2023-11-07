@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function ContactPage() {
+export default function ContactPage() { 
  const [name, setName] = useState("");
  const [email, setEmail] = useState("");
  const [message, setMessage] = useState("");
@@ -29,7 +29,7 @@ export default function ContactPage() {
    }
  };
 
- const handleSubmit = (event) => {
+ const handleSubmit = (event) => { 
    event.preventDefault();
 
    setNameError(name ? "" : "Name is required");
