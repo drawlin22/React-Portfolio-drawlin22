@@ -8,7 +8,7 @@ export default function WorkPage() {
       <div className="row">
  {workData.map((article) => (
    <div className="col-md-4" key={article.id}>
-<div className="card" key={article.id}>
+<div className="card zoom-card" key={article.id}>
  <div className="card-body" style={{height: '425px'}}>
    <h5 className="card-title text-center"><strong>{article.title}</strong></h5>
    <p className="card-text">{article.description}</p>
