@@ -98,6 +98,17 @@
    .spin-on-hover:hover {
     transform: rotate(360deg);
    }
+
+   @keyframes slide {
+    0% { margin-left: 0; }
+    50% { margin-left: 100px; }
+    100% { margin-left: 0; }
+  }
+
+  .img-fluid:hover {
+    animation: slide 2s infinite;
+  }
+
    
   
    
