@@ -64,6 +64,15 @@
     background-color: #3f51b5;
     color: white;
    }
+
+   .glow-on-hover {
+    transition: box-shadow 0.3s ease-in-out;
+   }
+   
+   .glow-on-hover:hover {
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+   }
+   
    
   
   @media (prefers-color-scheme: light) {

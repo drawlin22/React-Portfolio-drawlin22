@@ -14,7 +14,7 @@ export default function WorkPage() {
    <p className="card-text">{article.description}</p>
    <a href={article.repo} target="_blank" rel="noopener noreferrer" className="card-link">Github Repo</a>
    <a href={article.link}>
-     <img src={article.imageSrc} title={article.title} alt={article.title} className="card-img-bottom" 
+     <img src={article.imageSrc} title={article.title} alt={article.title} className="card-img-bottom glow-on-hover" 
      height="200px" width="50px"/>
    </a>
  </div>
