@@ -80,7 +80,7 @@ export default function ResumePage() {
  return (
   <>
   <br></br>
-    <a href={myResume} download="Resume">
+    <a href={myResume} download="Resume" className="glow-on-hover">
      <button>Download My Resume</button>
    </a>
    <br></br>
