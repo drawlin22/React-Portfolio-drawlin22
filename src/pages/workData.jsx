@@ -10,7 +10,7 @@ import quiz from "../assets/img/quiz.png";
 import password from "../assets/img/password.png";
 
 
-export const workData = [
+export const workData = [ /* array of objects that contain the data for each project */
     {
       id: "CodeMantic",
       title: "CodeMantic",

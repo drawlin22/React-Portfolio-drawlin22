@@ -1,10 +1,10 @@
 
-import React from 'react';
-import {resumeData} from './resumeData';
-import myResume from '../assets/resume/Resume.pdf';
+import React from 'react'; 
+import {resumeData} from './resumeData'; /* importing the resume data */
+import myResume from '../assets/resume/Resume.pdf'; /* importing my resume to be available to download */
 
 
-function ContactInfo() {
+function ContactInfo() { /* contact info */
  return (
    <div>
      <p><i>{resumeData.contact.address}</i></p>
@@ -15,7 +15,7 @@ function ContactInfo() {
  );
 }
 
-function Skills() {
+function Skills() { /* skills */
   return (
     <div>
       <h2>Skills/Talents/Abilitites</h2>
@@ -24,7 +24,7 @@ function Skills() {
   );
  }
  
- function Summary() {
+ function Summary() { /* summary */
   return (
     <div>
       <h2>Summary</h2>
@@ -33,7 +33,7 @@ function Skills() {
   );
  }
 
- function Education() {
+ function Education() { /* education */
   return (
     <div>
       <h2>Education</h2>
@@ -50,7 +50,7 @@ function Skills() {
   );
  }
  
- function WorkExperience() {
+ function WorkExperience() { /* work experience */
   return (
 
     <div>
@@ -66,7 +66,7 @@ function Skills() {
   );
  }
 
- function Proficiencies() {
+ function Proficiencies() { /* proficiencies */
   return (
     <div>
       <h2>Proficiencies</h2>
@@ -76,7 +76,7 @@ function Skills() {
  }
  
 
-export default function ResumePage() {
+export default function ResumePage() { /* redering the resume page with each component */
  return (
   <>
   <br></br>

@@ -1,4 +1,4 @@
-export const resumeData = {
+export const resumeData = { /* object that contains the data for the resume */
     contact: {
       address: "1500 West El Camino 275 Sacramento, Ca 95833",
       phone: "(916) 396-4503",

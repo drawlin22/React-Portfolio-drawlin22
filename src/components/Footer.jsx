@@ -3,7 +3,7 @@ import gitHub from '../assets/img/Github.png';
 import linkedIn from '../assets/img/linkedin.png';
 import devTo from '../assets/img/Devto.png';
 
-export function Footer() {
+export function Footer() { /* footer links to my github, linkedin, and dev.to */
  return (
      <div>
          <div className="container">

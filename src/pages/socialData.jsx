@@ -1,4 +1,4 @@
-export const socialData = [
+export const socialData = [ /* array of objects that contain the data for social media */
     {
       id: "Github",
       title: "Github",
