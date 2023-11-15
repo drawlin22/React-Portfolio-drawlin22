@@ -52,6 +52,13 @@
   button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
+
+  .align-right {
+    position:absolute;
+   right:0;
+   margin-right: 5px;
+   }
+   
   
   .profile-footer {
     text-align: center;
@@ -109,8 +116,6 @@
     animation: slide 2s infinite;
   }
 
-   
-  
    
   
   @media (prefers-color-scheme: light) {

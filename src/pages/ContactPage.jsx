@@ -47,7 +47,8 @@ export default function ContactPage() {
   
    <>
     <br></br>
-     <form onSubmit={handleSubmit}>
+     {/* <form onSubmit={handleSubmit}> */}
+     <form action="mailto:tacobellboi@gmail.com" method="get" enctype="text/plain">
        <label>
          <input
            type="text"

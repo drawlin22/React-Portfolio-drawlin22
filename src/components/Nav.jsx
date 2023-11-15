@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './UI/Navbar';
 import { NavLink } from 'react-router-dom';
+import myResume from "../assets/resume/Resume.pdf";
 
 export default function Nav() {
   // The Navbar UI component will render each of the Link elements in the links prop
@@ -15,12 +16,16 @@ export default function Nav() {
       <NavLink key={2} className="nav-link text-light text-zoom" to="/portfolio" activeclassname="active">
         Portfolio
       </NavLink>,
-      <NavLink key={3} className="nav-link text-light text-zoom" to="/contact" activeclassname="active">
-        Contact
-      </NavLink>,
       <NavLink key={4} className="nav-link text-light text-zoom" to="/resume" activeclassname="active">
         Resume
       </NavLink>,
+       <a href="mailto:tacobellboi@yahoo.com" className="nav-link text-light text-zoom">
+       Contact Me
+     </a>,
+    <a href={myResume} download="Resume" className="glow-on-hover ml-auto align-right">
+       <button>My Resume</button>
+   </a>
+   
      ]}
     />
   );

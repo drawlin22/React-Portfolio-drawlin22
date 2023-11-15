@@ -1,7 +1,6 @@
 
 import React from 'react'; 
 import {resumeData} from './resumeData'; /* importing the resume data */
-import myResume from '../assets/resume/Resume.pdf'; /* importing my resume to be available to download */
 
 
 function ContactInfo() { /* contact info */
@@ -79,11 +78,7 @@ function Skills() { /* skills */
 export default function ResumePage() { /* redering the resume page with each component */
  return (
   <>
-  <br></br>
-    <a href={myResume} download="Resume" className="glow-on-hover">
-     <button>Download My Resume</button>
-   </a>
-   <br></br>
+  
    <br></br>
    <Proficiencies />,
   {/* <ContactInfo />, */}
