@@ -5,6 +5,7 @@ import devTo from '../assets/img/Devto.png';
 
 export function Footer() { /* footer links to my github, linkedin, and dev.to */
  return (
+   
      <div>
          <div className="container">
              <div className="row">

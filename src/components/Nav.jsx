@@ -16,13 +16,13 @@ export default function Nav() {
       <NavLink key={2} className="nav-link text-light text-zoom" to="/portfolio" activeclassname="active">
         Portfolio
       </NavLink>,
-      <NavLink key={4} className="nav-link text-light text-zoom" to="/resume" activeclassname="active">
+      <NavLink key={3} className="nav-link text-light text-zoom" to="/resume" activeclassname="active">
         Resume
       </NavLink>,
-       <a href="mailto:tacobellboi@yahoo.com" className="nav-link text-light text-zoom">
+       <a key={4}href="mailto:tacobellboi@yahoo.com" className="nav-link text-light text-zoom">
        Contact Me
      </a>,
-    <a href={myResume} download="Resume" className="glow-on-hover ml-auto align-right">
+    <a key={5}href={myResume} download="Resume" className="glow-on-hover ml-auto align-right">
        <button>My Resume</button>
    </a>
    

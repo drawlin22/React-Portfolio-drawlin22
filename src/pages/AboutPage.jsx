@@ -3,6 +3,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import profileImage from '../assets/img/Profile.jpeg';
 
+import {workData} from './workData';
+
+const projectOne = workData.find(project =>project.id ==="CodeMantic");
+const projectTwo = workData.find(project =>project.id ==="placeholder");
+const projectThree = workData.find(project =>project.id ==="Weather Dashboard");
+const projectFour = workData.find(project =>project.id ==="Work Day Scheduler");
+
 export default function AboutPage() { 
  
 
@@ -16,8 +23,9 @@ export default function AboutPage() {
           width="400px"
           className="img-fluid"
              />
-             <br></br>
           </div>
+         
+        
           <div className="col-md-6">
 
     <p className="lead text-zoom">
@@ -36,10 +44,70 @@ export default function AboutPage() {
         and am currently working through a full stack bootcamp at UC Davis.</font></strong>
     
     </p>
-        </div>
-        </div>
-        </div>
+
+  </div>
+  </div>
+        
+  <div className="container pt-4">
+ <div className="row">
+   <div className="col-md-6">
+     <div className="card zoom-card">
+       <div className="card-body">
+         <h5 className="card-title text-center"><strong>{projectOne.title}</strong></h5>
+         <p className="card-text">{projectOne.description}</p>
+         <a href={projectOne.link} className="card-link">
+           <img src={projectOne.imageSrc} title={projectOne.title} alt={projectOne.title} className="card-img-bottom glow-on-hover" 
+           height="200px" width="50px"/>
+         </a>
+       </div>
+     </div>
+   </div>
+   <div className="col-md-6">
+     <div className="card zoom-card">
+       <div className="card-body">
+       <h5 className="card-title text-center"><strong>{projectTwo.title}</strong></h5>
+         <p className="card-text">{projectTwo.description}</p>
+         <a href={projectTwo.link} className="card-link">
+           <img src={projectTwo.imageSrc} title={projectTwo.title} alt={projectTwo.title} className="card-img-bottom glow-on-hover" 
+           height="200px" width="50px"/>
+         </a>
+       </div>
+     </div>
+     <br></br>
+   </div>
+   <div className="col-md-6">
+     <div className="card zoom-card">
+       <div className="card-body">
+       <h5 className="card-title text-center"><strong>{projectThree.title}</strong></h5>
+         <p className="card-text">{projectThree.description}</p>
+         <a href={projectThree.link} className="card-link">
+           <img src={projectThree.imageSrc} title={projectThree.title} alt={projectThree.title} className="card-img-bottom glow-on-hover" 
+           height="200px" width="50px"/>
+         </a>
+       </div>
+     </div>
+   </div>
+   <div className="col-md-6">
+     <div className="card zoom-card">
+       <div className="card-body">
+       <h5 className="card-title text-center"><strong>{projectFour.title}</strong></h5>
+         <p className="card-text">{projectFour.description}</p>
+         <a href={projectFour.link} className="card-link">
+           <img src={projectFour.imageSrc} title={projectFour.title} alt={projectFour.title} className="card-img-bottom glow-on-hover" 
+           height="200px" width="50px"/>
+         </a>
+       </div>
+     </div>
+     <br></br>
+   </div>
+ </div>
+</div>
+
+
+  </div>
+      
       )
     }
+    
     
     
