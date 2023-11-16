@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import profileImage from '../assets/img/Profile.jpeg';
 
 import {workData} from './workData';
+import gitHub from '../assets/img/Github.png';
 
 const projectOne = workData.find(project =>project.id ==="CodeMantic");
 const projectTwo = workData.find(project =>project.id ==="placeholder");
@@ -54,7 +55,9 @@ export default function AboutPage() {
      <div className="card zoom-card">
        <div className="card-body">
          <h5 className="card-title text-center"><strong>{projectOne.title}</strong></h5>
-         <p className="card-text">{projectOne.description}</p>
+         <p className="card-text">{projectOne.description}<a href="https://github.com/drawlin22/codeMantic" className="glow-on-hover" target="_blank" rel="noopener noreferrer">
+         <img src={gitHub} height="20px" width="20px" alt="GitHub"/></a>
+         </p>
          <a href={projectOne.link} className="card-link">
            <img src={projectOne.imageSrc} title={projectOne.title} alt={projectOne.title} className="card-img-bottom glow-on-hover" 
            height="200px" width="50px"/>
@@ -66,7 +69,8 @@ export default function AboutPage() {
      <div className="card zoom-card">
        <div className="card-body">
        <h5 className="card-title text-center"><strong>{projectTwo.title}</strong></h5>
-         <p className="card-text">{projectTwo.description}</p>
+         <p className="card-text">{projectTwo.description}<a href="https://github.com/drawlin22/007-socialite" className="glow-on-hover" target="_blank" rel="noopener noreferrer">
+         <img src={gitHub} height="20px" width="20px" alt="GitHub"/></a></p>
          <a href={projectTwo.link} className="card-link">
            <img src={projectTwo.imageSrc} title={projectTwo.title} alt={projectTwo.title} className="card-img-bottom glow-on-hover" 
            height="200px" width="50px"/>
@@ -79,7 +83,8 @@ export default function AboutPage() {
      <div className="card zoom-card">
        <div className="card-body">
        <h5 className="card-title text-center"><strong>{projectThree.title}</strong></h5>
-         <p className="card-text">{projectThree.description}</p>
+         <p className="card-text">{projectThree.description}<a href="https://github.com/drawlin22/drawlin22-dashboard-06" className="glow-on-hover" target="_blank" rel="noopener noreferrer">
+         <img src={gitHub} height="20px" width="20px" alt="GitHub"/></a></p>
          <a href={projectThree.link} className="card-link">
            <img src={projectThree.imageSrc} title={projectThree.title} alt={projectThree.title} className="card-img-bottom glow-on-hover" 
            height="200px" width="50px"/>
@@ -91,7 +96,8 @@ export default function AboutPage() {
      <div className="card zoom-card">
        <div className="card-body">
        <h5 className="card-title text-center"><strong>{projectFour.title}</strong></h5>
-         <p className="card-text">{projectFour.description}</p>
+         <p className="card-text">{projectFour.description}<a href="https://github.com/drawlin22/api-scheduler-05" className="glow-on-hover" target="_blank" rel="noopener noreferrer">
+         <img src={gitHub} height="20px" width="20px" alt="GitHub"/></a></p>
          <a href={projectFour.link} className="card-link">
            <img src={projectFour.imageSrc} title={projectFour.title} alt={projectFour.title} className="card-img-bottom glow-on-hover" 
            height="200px" width="50px"/>
